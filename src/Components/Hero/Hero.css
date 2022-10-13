@@ -1,0 +1,29 @@
+body div.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/Code.jpg");
+    background-color: #07355fb7;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10vh;
+    font-size: 300%;
+    color: white;
+}
+
+body div.hero p{
+    letter-spacing: 2px;
+}
+
+
+
+/* Phone Layout */
+@media screen and (max-width: 767px) {
+    body div.hero{
+        padding: 5vh;
+    }
+}

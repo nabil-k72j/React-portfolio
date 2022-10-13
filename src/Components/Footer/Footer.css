@@ -1,0 +1,67 @@
+body div.footer{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    padding-bottom: 5vh;
+}
+
+
+body div.footer a.back-to-top{
+    padding: 15px 25px;
+    border-radius: 2px;
+    background-color: #084783;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+body div.footer div.media-links-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+
+body div.footer div.media-links-container a.call-to-action{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+}
+
+body div.footer div.media-links-container a.call-to-action:hover{
+    background-color: #084783;
+    transform: scale(1.1);
+}
+
+body div.footer p.dev-credit{
+    color: grey;
+    text-align: center;
+    word-spacing: 3px;
+}
+
+body div.footer p.dev-credit span{
+    color: #084783;
+    letter-spacing: 1px;
+}
+
+
+/* Phone Layout */
+@media screen and (max-width: 767px) {
+    body div.footer div.media-links-container{
+        gap: 3vw;
+    }
+}

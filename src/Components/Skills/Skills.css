@@ -1,0 +1,48 @@
+body div.skills{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+body div.skills h1.name{
+    font-size: 500%;
+    letter-spacing: 5px;
+}
+
+body div.skills div.skill-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+body div.skills div.skill-container div.skill-element{
+    width: 600px;
+    padding: 50px;
+    border-radius: 5px;
+    gap: 30px;
+    background-color: #1e293b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+body div.skills div.skill-container div.skill-element p {
+    text-align: center;
+    font-size: 110%;
+}
+
+
+/* Phone Layout */
+@media screen and (max-width: 767px) {
+    body div.skills div.skill-container div.skill-element{
+        width: 90%;
+    }
+}

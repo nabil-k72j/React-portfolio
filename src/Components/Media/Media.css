@@ -1,0 +1,50 @@
+body div.media{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+body div.media a.media-link{
+    width: 25%;
+    height: 20vh;
+    background-color: #12121a;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 200%;
+    cursor: pointer;
+    border-top: 1px solid black;
+    transition-duration: 500ms;
+}
+body div.media a.media-link:hover{
+    background-color: #08080c;
+}
+
+/* Phone Layout */
+@media screen and (max-width: 767px) {
+    body div.media a.media-link p{
+        font-size: 1rem;
+    }
+}
+
+
+.Instagram{
+    border-color: #e0176b !important;
+}
+
+
+.Github{
+    border-color:black !important;
+}
+
+.Linkedin{
+    border-color:#0072b1 !important;
+}
+
+.Telegram{
+    border-color:#173370 !important;
+}

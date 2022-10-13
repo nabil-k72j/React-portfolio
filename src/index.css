@@ -1,0 +1,42 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*,*:after,*:before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #0b1120;
+  color: white;
+  user-select: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1{
+  color: #084783;
+}
+
+.hidden{
+  opacity: 0;
+  transition: all 1s;
+}
+
+.show{
+  opacity: 1;
+}
+
+
+
+/* Desktop Layout */
+@media screen and (min-width: 1024px) {}
+
+
+/* Tablet Layout */
+@media screen and (min-width: 767px) and (max-width: 1023px) {}
+
+
+/* Phone Layout */
+@media screen and (max-width: 767px) {}

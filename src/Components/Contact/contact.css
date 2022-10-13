@@ -1,0 +1,95 @@
+div.contact{
+    margin: 15px 5px;
+    display: flex;
+    justify-content: center;
+    color: #084783;
+    padding-bottom: 10vh;
+}
+div.contact form{
+    border: 2px solid #084783;
+    padding: 25px 35px;
+}
+div.contact form div.inputbox {
+    position: relative;
+    margin: 45px 12px;
+
+}
+
+div.contact form h1{
+    color: #084783;
+    text-align: center;
+}
+
+div.contact form div.inputbox label {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    transform: translateY(12px);
+    transition: all .5s ease;
+}
+
+/* #7D4FCE */
+
+div.contact form div.inputbox input,
+div.contact form div.inputbox textarea {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #084783;
+    background-color: transparent;
+    resize: none;
+    width: 25rem;
+    height: 3rem;
+    color: #041C32;
+}
+
+
+body.dark div.contact form div.inputbox input,
+body.dark div.contact form div.inputbox textarea{
+    color: #fff;
+}
+
+div.contact form div.inputbox input:focus~label,
+div.contact form div.inputbox textarea:focus~label,
+div.contact form div.inputbox input:valid~label,
+div.contact form div.inputbox textarea:valid~label {
+    transform: translateY(-15px);
+    opacity: 1;
+}
+div.contact form div.inputbox textarea:focus~label,
+div.contact form div.inputbox textarea:valid~label {
+    transform: translateY(-25px);
+}
+div.contact form div.submit button{
+    font-size: 1.2rem;
+    margin-left: 15px;
+    background-color: #084783;  
+    padding: 8px 28px;
+    border-radius: 5px;
+    transition: all .5s ease;
+    cursor: pointer;
+    border: none;
+}
+div.contact form div.submit button:hover{
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+
+/* Phone Layout */
+@media screen and (max-width: 767px) {
+    div.contact form{
+        border: 2px solid #084783;
+        padding: 20px 10px;
+    }
+
+    div.contact form div.inputbox input,
+    div.contact form div.inputbox textarea {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #084783;
+    background-color: transparent;
+    resize: none;
+    width: 15rem;
+    height: 3rem;
+}
+}
